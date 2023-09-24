@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur Code</h1>
+    <button id="Start">Start</button>
+    <button id="stopButton">Stop</button>
+</body>
+<script>
+//     const sayParth = function(){
+//         console.log('Parth')
+//     }
+
+//     const changeText = function(){
+//         document.querySelector('h1').innerHTML = 'Best js series'
+//     }
+
+//     const changeMe = setTimeout(changeText, 2000)
+    
+//   document.querySelector('#stop').addEventListener('click', function(e){
+//     clearTimeout(changeMe)
+//     console.log('stopped')
+//   })
+
+const dayDate = function(str) {
+    console.log(str, Date.now());
+}
+
+const intervalId = setInterval(dayDate, 1000, "hii");
+
+document.querySelector('#stopButton').addEventListener('click', function() {
+    clearInterval(intervalId);
+});
+
+</script>
+</html>
